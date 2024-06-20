@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ho408x9th-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/ho408x9th-nodejs

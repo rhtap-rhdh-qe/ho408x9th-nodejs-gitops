@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ho408x9th-nodejs-gitops
+  description: This is GitOps manifest for ho408x9th-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: ho408x9th-nodejs
+    janus-idp.io/tekton: ho408x9th-nodejs 
+    backstage.io/kubernetes-id: ho408x9th-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ho408x9th-nodejs
